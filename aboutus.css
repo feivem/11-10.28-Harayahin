@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono", monospace;
+    font-weight: 500;
+}
+
+html, body {
+    height: 100%; /* Ensures body covers full viewport */
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background: #f5f5eb;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar .logo img {
+    width: 60px;
+}
+
+.navbar nav {
+    display: flex;
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar nav a:hover {
+    color: #8b5d33;
+}
+
+/* Content */
+.content {
+    margin: 80px 20px; /* Adjusted margin to avoid navbar overlap */
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Sono', sans-serif;
+    line-height: 1.6;
+    flex: 1; /* Fills available space */
+}
+
+.about h2, .mission h2 {
+    font-family: 'Qwitcher Grypen', cursive; /* Header font */
+    color: #8b5d33;
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-weight: bold; /* Make it bold */
+}
+
+p, li {
+    font-family: 'Sono', sans-serif;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #8b5d33;
+    color: #fff;
+    border-radius: 10px;
+    margin-top: auto; /* Pushes footer to the bottom */
+}
+
+.footer p {
+    margin: 0;
+    font-family: 'Sono', sans-serif;
+}

@@ -1,0 +1,90 @@
+/* Apply box model and general styling */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    font-weight: 500; 
+    font-family: "Sono", monospace; 
+} 
+
+body { 
+    background: #f5f5eb; 
+    color: #333; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    min-height: 100vh; 
+    padding: 20px; 
+} 
+
+h1 { 
+    font-family: "Qwitcher Grypen", cursive;
+    font-size: 64px; 
+    font-weight: bold; 
+    color: #8b5d33; 
+    margin-bottom: 20px; 
+    text-align: center; 
+} 
+
+.form-container { 
+    background: #efe2d2; 
+    padding: 30px; 
+    border-radius: 20px; 
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+    border: 1px solid #d1bfa7; 
+    max-width: 600px; 
+    width: 100%; 
+} 
+
+form label { 
+    font-size: 16px; 
+    font-weight: bold; 
+    font-family: "Sono", monospace; 
+    color: #6b4f4f; 
+    display: block; 
+    margin-bottom: 8px; 
+    text-align: left; 
+} 
+
+form input, 
+form textarea { 
+    width: 100%; 
+    padding: 12px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    font-size: 14px; 
+    margin-bottom: 15px; 
+    background: #fdf8f4; 
+    color: #333; 
+    font-family: "Sono", monospace; 
+} 
+
+form input:focus, 
+form textarea:focus { 
+    border-color: #8b5d33; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(139, 93, 51, 0.3); 
+} 
+
+form textarea { 
+    resize: none; 
+    height: 100px; 
+} 
+
+form button { 
+    background: #8b5d33; 
+    color: #fff; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 12px 25px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    font-family: "Sono", monospace; 
+    transition: background-color 0.3s ease; 
+    width: 100%; 
+} 
+
+form button:hover { 
+    background: #a67242; 
+}

@@ -1,0 +1,34 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    font-family: "Sono", monospace;
+    font-weight: 500;
+}
+
+.navbar .logo img {
+    width: 60px;
+}
+
+.navbar nav {
+    display: flex; 
+}
+
+.navbar nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+
+.navbar nav a:hover {
+    color: #8b5d33;
+}

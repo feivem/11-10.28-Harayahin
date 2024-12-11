@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sono", monospace;
+    font-weight: 500;
+}
+
+body {
+    background: #f5f5eb;
+    color: #333;
+    align-items: center;
+}
+
+h1 {
+    font-family: "Qwitcher Grypen", cursive;
+    font-weight: normal;
+    color: #8b5d33;
+    margin-top: 75px;
+    font-size: 85px;
+    text-align: center;
+}
+
+/* SONG CARD SECTION */
+.song-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    margin: 20px auto;
+    gap: 10px;
+}
+
+.song-search {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    background: #efe2d2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1bfa7;
+    border-radius: 5px;
+}
+
+.song-search form input {
+    height: 50px;
+    width: 85%;
+    border-radius: 10px;
+    padding: 15px;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.song-search button {
+    background: #8b5d33;
+    color: #fff;
+    border-radius: 8px;
+    padding: 5px;
+    height: 50px;
+    width: 70px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: "Sono", monospace;
+    transition: background-color 0.3s ease;
+}
+
+.song-search button:hover {
+    background: #a67242;
+}
+
+/* SEARCH RESULTS */
+.results {
+    max-height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.song-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+iframe {
+    width: 80%;
+    height: 80px;
+    border: 0;
+}
+
+#song-card-container {
+    margin-top: 20px;
+}
+
+/* DEDICATION SECTION */
+.dedication-form {
+    background: #efe2d2;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #d1bfa7;
+    width: 600px;
+    margin: 20px auto;
+    font-family: "Sono", monospace;
+    font-size: 14px;
+}
+
+.dedication-form label {
+    font-weight: bold;
+    align-items: left;
+    color: #6b4f4f;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.upload-option {
+    display: flex;
+    flex-direction: row;
+    align-content: left;
+    margin-top: 5px;
+}
+
+.dedication-form input,
+.dedication-form textarea,
+.dedication-form select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 14px;
+    margin-bottom: 15px;
+    background: #fdf8f4;
+    color: #333;
+    font-family: "Sono", monospace;
+}
+
+.dedication-form input:focus,
+.dedication-form textarea:focus {
+    border-color: #8b5d33;
+    outline: none;
+    box-shadow: 0 0 5px rgba(139, 93, 51, 0.3);
+}
+
+/* FOOTER AREA */
+.dedication-form .form-footer {
+    height: 40px;
+    padding: 5px;
+    background: #fdf8f4;
+    border: 1px solid #d1bfa7;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#sendButton {
+    background: #8b5d33;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 5px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.dedication-form button:hover {
+    background: #a67242;
+}
+
+/* PREVIOUS DEDICATIONS SECTION */
+#previous-dedications {
+    background: #fdf8f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+#previous-dedications h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6b4f4f;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+}
+
+/* Dedication Cards */
+.dedication-card {
+    background: #efe2d2;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1bfa7;
+}
+
+.dedication-card h3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #8b5d33;
+    margin-bottom: 10px;
+}
+
+.dedication-card p {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.dedication-card audio {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.dedication-card p strong {
+    font-size: 14px;
+    color: #8b5d33;
+}
+
+#previous-dedications p {
+    font-size: 14px;
+    color: #6b4f4f;
+    text-align: center;
+    margin-top: 20px;
+}
